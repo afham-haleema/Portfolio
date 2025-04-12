@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito',sans-serif;
+}
+body{
+    background-color: #212529;
+    color: white;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    padding: 20px;
+}
+.name h1 span{
+    color: rgb(225, 25, 59);
+}
+
+.about-container{
+    display: flex;
+}
+
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    gap: 30px;
+}
+
+.service .s-card{
+    background-color: #51565b;
+    border-radius: 10px;
+    box-shadow: 10px 4px 10px rgba(0,0,0.2,0.2);
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    height: 250px;
+    overflow: hidden;
+    z-index: 100;
+}
+.service .s-card:hover{
+    transform: scale(1.05);
+}
+
+
+.work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.work .w-card{
+    position: relative;
+}
+
+.work .w-card img {
+    border-radius: 10px;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 350px;
+    width: 450px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgb(225, 25, 59,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    height: 350px;
+    width: 450px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+
+.work .w-card:hover .overlay {
+    opacity: 1; 
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle i{
+    color: rgb(225, 25, 59);
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.social{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.social i{
+    font-size: 30px;
+}
+button{
+    background-color:rgb(225, 25, 59) ;
+    color: white;
+    border: none;
+    padding:  10px;
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.info{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.form input{
+    padding: 5px;
+   height: 40px;
+   border-radius: 10px;
+   background-color: #51565b;
+   border: 1px solid #212529;
+}
+.form textarea{
+    height: 90px;
+    padding: 5px;
+    border-radius: 10px;
+   background-color: #51565b;
+   border: 1px solid #212529;
+   resize: none;
+}
+
+
+
+
+
+
+
+@media (min-width:320px) AND (max-width:740px) {
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 10rem;
+    }
+    .profile-img img{
+        width: 350px;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .abt-img img{
+        width: 100%;
+        margin: auto;
+    }
+    .service{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .service .s-card{
+        width: 75%;
+        height: 350px;
+    }
+    #contact{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .info{
+        width: 70%;
+    }
+    .form{
+        width: 70%;
+
+    }
+}
+  
