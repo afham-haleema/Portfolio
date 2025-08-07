@@ -183,6 +183,14 @@ a{
  gap: 30px;
 }
 
+.experience a{
+    color: rgb(240, 47, 79);
+}
+.experience a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .xp-card{
     width: 90%;
     height: 350px;
