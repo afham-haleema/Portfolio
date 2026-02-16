@@ -4,11 +4,7 @@ Hi there! 👋 Welcome to my personal portfolio website where I showcase my skil
 
 📌 **Live Preview:**  
 
-👉 [Click here to view the website](https://afham-haleema.github.io/Portfolio/)
-
-## 🖼️ Screenshot
-
-![Portfolio Screenshot](./portfolio.png) 
+👉 [Click here to view the website](https://afham-haleema.github.io/Portfolio/) 
 
 ## 💡 Features
 
