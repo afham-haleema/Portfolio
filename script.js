@@ -317,7 +317,6 @@ const emailCopy = {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    cursor.init();
     navbar.init();
     mobileMenu.init();
     smoothScroll.init();
