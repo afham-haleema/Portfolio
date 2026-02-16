@@ -4,418 +4,590 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afham Haleema</title>
+    <title>Afham Haleema — Full Stack Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/logo.png" type="image/x-png">
 </head>
 
 <body>
+    <!-- Cursor follower -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-    <nav class="navbar">
-        <div class="logo">Afham</div>
-        <div class="nav-items">
-            <a href="#about">01. About</a>
-            <a href="#services">02. Services</a>
-            <a href="#experience">03. Experience</a>
-            <a href="#portfolio">04. Portfolio</a>
-            <a href="#contact">05. Contact</a>
-            <a href="Afham_CV.pdf"><button>Resume</button></a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">AH</span>
+                <span class="logo-bracket">]</span>
+            </div>
+            <div class="nav-items">
+                <a href="#about" class="nav-link"><span class="nav-number">01</span>About</a>
+                <a href="#services" class="nav-link"><span class="nav-number">02</span>Services</a>
+                <a href="#experience" class="nav-link"><span class="nav-number">03</span>Experience</a>
+                <a href="#portfolio" class="nav-link"><span class="nav-number">04</span>Portfolio</a>
+                <a href="#contact" class="nav-link"><span class="nav-number">05</span>Contact</a>
+                <a href="Afham_CV.pdf" class="resume-btn">Resume<span class="btn-arrow">→</span></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
-
     </nav>
 
-    <div class="body">
-        <div class="info">
-            <a href="https://github.com/afham-haleema"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/afhamhaleema"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:afhamhaleema@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-            <div class="line"></div>
-        </div>
-        <div class="content">
-            <div class="name">
-                <h1>Hi, my name is</h1>
-                <div class="big-heading" data-aos="fade-up">Afham Haleema.</div>
-                <div class="blurred-heading" data-aos="fade-right">I develop Websites and Apps.</div>
-                <div class="short-info" data-aos="fade-left">I’m a Full stack developer and a student specializing in
-                    building (and
-                    occasionally designing) websites and Apps.</div>
-            </div>
-            <!-- ABOUT -->
-            <section id="about">
-                <div class="title" data-aos="fade-up">
-                    <h2>About Me</h2>
-                    <div class="line-h"></div>
-                </div>
-                <div class="abt-container" data-aos="fade-up">
-                    <div class="abt-me">
-                        <p>
-                            Hello! I’m Afham, a passionate developer who enjoys building digital experiences for the
-                            web.
-                            My journey into web development began in 2023 when I created a full-stack airplane booking
-                            system as my final school project. That experience sparked a deep interest in technology,
-                            which I continue to pursue through my Bachelor’s degree in Computer Science.</p>
-
-                        <p>Since then, I’ve worked with multiple programming languages and frameworks, participated in
-                            various hackathons and workshops, and continuously strive to expand my skills. Currently,
-                            I’m planning to explore networking and cybersecurity to broaden my technical foundation.</p>
-
-                        <p>Beyond coding, I enjoy reading and traveling—both of which inspire creativity and keep me
-                            curious about the world.</p>
-
-                        <p>Here are my top skills:</p>
-
-                        <ul>
-                            <li class="highlight">Web development</li>
-                            <li>HTML, CSS , JS, PHP, Python , Java, MySQL, MongoDB, React, django , Node, Express,
-                                Bootstrap, C#, angular, laravel,
-                                Nextjs</li>
-                            <br>
-                            <li class="highlight">App development</li>
-                            <li>Flutter, dart, Firebase</li>
-                            <br>
-                            <li class="highlight">Other Technologies</li>
-                            <li>Git/Github, CMD , Power Platform, Jira, OOP, DSA, APIs, Assembly language, Kali linux,
-                                Docker, virtual box, Webpack, Babel, Jest, Cypress, Code review and documentation, AWS,
-                                wordpress</li>
-                            <br>
-                            <li class="highlight">Soft Skills</li>
-                            <li>Communication , Teamwork, Adaptability, Time management, Leadership, growth mindset,
-                                Problem solving</li>
-                        </ul>
-                    </div>
-                    <div class="abt-img">
-                        <img src="./images/developer.png" alt="">
-                    </div>
-                </div>
-
-            </section>
-            <!-- SERVICES -->
-            <section id="services">
-                <div class="title" data-aos="fade-up">
-                    <h2>Services</h2>
-                    <div class="line-h"></div>
-                </div>
-                <div class="service-container">
-                    <div class="card" data-aos="flip-up">
-                        <h1 id="i"><i class="fa-solid fa-code"></i></h1>
-                        <h2 id="service">Web development</h2>
-                        <p>With hands-on experience in both the MERN and WAMP stacks, I build dynamic and responsive
-                            websites using technologies like HTML, CSS, JavaScript, PHP, React, Node.js, and MySQL. My
-                            focus is on creating scalable, user-friendly web solutions that deliver strong performance
-                            and seamless user experiences.</p>
-                    </div>
-                    <div class="card" data-aos="flip-up">
-                        <h1 id="i"><i class="fa-brands fa-app-store"></i></h1>
-                        <h2 id="service">App development</h2>
-                        <p>I specialize in developing cross-platform mobile apps using Flutter and Firebase. From UI
-                            design to backend integration and payment gateways, I build high-performing apps that offer
-                            smooth, intuitive functionality, tailored to meet real user needs.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- EXPERIENCE -->
-            <section id="experience">
-                <div class="title" data-aos="fade-up">
-                    <h2>Experience</h2>
-                    <div class="line-h"></div>
-                </div>
-                <div class="experience">
-                    <div class="xp-card card" data-aos="flip-up">
-                        <div class="duration">
-                            <h2 id="service">Full-Stack developer intern</h2>
-                            <h4 style="color: gray;">July 2025 - Aug 2025</h4>
-                        </div>
-                        <h3>voxa</h3>
-                        <ul>
-                            <li>Built authentication and onboarding pages using
-                                React and Firebase.</li>
-                            <li> Developed dashboard, profile, and level-based
-                                gamified learning features.</li>
-                            <li> Integrated voice feedback system with AssemblyAI
-                                and OpenAI.</li>
-                            <li>Used Firebase Firestore and Cloud Storage for
-                                real-time data handling.</li>
-                            <li>Website link : <a href="https://www.voxa.club/" target="_blank">https://www.voxa.club/</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- PORTFOLIO -->
-            <section id="portfolio">
-                <div class="title" data-aos="fade-up">
-                    <h2>My works</h2>
-                    <div class="line-h"></div>
-                </div>
-                <div class="work-container" data-aos="zoom-in">
-                    <div class="w-img">
-                        <img src="./images/voxa.png" alt="">
-                    </div>
-                    <div class="w-info">
-                        <h2>Voxa voice app</h2>
-                        <div class="w-card">
-                            Effortlessly enhance and track your speaking skills with Voxa. Practice real-time voice exercises, receive instant AI-powered feedback, and monitor your progress with detailed analytics. Improve clarity, confidence, and communication through structured levels and challenges. Gain insights into your verbal delivery, tone, and fluency, all visualized in an engaging dashboard. Stay motivated with gamified learning and see exactly how your voice evolves—your growth, mapped out.
-                        </div>
-                        <div class="tech">
-                            <p>Nextjs</p>
-                            <p>Tailwind CSS</p>
-                            <p>AssembliAI</p>
-                            <p>OpenAI</p>
-                            <p>Firebase</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/afham-haleema/voxa" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://www.voxa.club/" target="_blank"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work-container" data-aos="zoom-in">
-                    <div class="w-info">
-                        <h2>Myntra Clone - Ecommerce</h2>
-                        <div class="w-cardr">
-                            Effortlessly browse and shop your favorite fashion items with this intuitive and
-                            user-friendly Myntra-inspired e-commerce website. Explore a wide range of categories
-                            including men’s, women’s, and kids’ fashion. Users can view detailed product information,
-                            add items to their cart, and securely complete their purchase. The platform also supports
-                            user authentication, profile management, payment integration with stripe and order tracking
-                            — providing a seamless shopping experience from start to finish.
-                        </div>
-                        <div class="tech">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>Mongodb</p>
-                            <p>Express</p>
-                            <p>React</p>
-                            <p></p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/afham-haleema/MyntraClone" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://myntra-clone-cc8t.vercel.app" target="_blank"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="w-img">
-                        <img src="./images/myntra.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="work-container" data-aos="zoom-in">
-                    <div class="w-img">
-                        <img src="./images/notes.png" alt="">
-                    </div>
-                    <div class="w-info">
-                        <h2>Notes web app</h2>
-                        <div class="w-card">
-                            Effortlessly manage your personal notes with this powerful and intuitive notes web app.
-                            Create, Read, Update, and Delete your notes with ease. The app allows you to add new notes
-                            and update them whenever needed. View a list of your notes with quick access to edit or
-                            delete them. Whether you’re jotting down quick thoughts, making to-do lists, or writing
-                            detailed notes, this app helps you stay organized and productive.
-                        </div>
-                        <div class="tech">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>Node</p>
-                            <p>Express</p>
-                            <p>JS</p>
-                            <p>MongoDB</p>
-                            <p>React</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/afham-haleema/Notes-website" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://notes-website-qh1a.vercel.app/" target="_blank"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work-container" data-aos="zoom-in">
-                    <div class="w-info">
-                        <h2>Movie Booking System</h2>
-                        <div class="w-cardr">
-                            Easily browse and book tickets for your favorite movies with this intuitive and
-                            user-friendly movie booking system. View a list of currently available movies along with
-                            showtimes, movie descriptions, and trailers. Select your preferred movie, choose from
-                            available time slots, and pick the perfect seats in a theater layout. Complete your booking
-                            process in a few simple steps, and receive a confirmation with your ticket details.
-                        </div>
-                        <div class="tech">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>JS</p>
-                            <p>PHP</p>
-                            <p>MySQL</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/afham-haleema/MovieOnlineBooking" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://movieonlinebooking.onrender.com/" target="_blank"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="w-img">
-                        <img src="./images/home.png" alt="">
-                    </div>
-
-                </div>
-                <div class="work-container" data-aos="zoom-in">
-                    <div class="w-img">
-                        <img src="./images/shopping_app.png" alt="">
-                    </div>
-                    <div class="w-info">
-                        <h2>Shopping App</h2>
-                        <div class="w-card">
-                            A seamless online shopping experience designed to help you explore a wide range of products,
-                            track your orders, and manage your shopping preferences. Browse through categories and view
-                            detailed product descriptions. With a secure and easy-to-navigate interface, users can add
-                            items to their cart, checkout effortlessly, and track their order status in real-time. The
-                            app also includes a smooth payment process, ensuring a convenient and enjoyable shopping
-                            journey from start to finish.
-                        </div>
-                        <div class="tech">
-                            <p>Flutter</p>
-                            <p>dart</p>
-                            <p>Firebase</p>
-                            <p>stripe</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/afham-haleema/shoporia" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://github.com/afham-haleema/shoporia" target="_blank"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work-container" data-aos="zoom-in">
-                    <div class="w-info">
-                        <h2>Online Banking App</h2>
-                        <div class="w-cardr">
-                            Experience seamless digital payments with SparkPay, your secure and intuitive payment
-                            companion.
-                            Easily send and receive money, pay bills, and make purchases at your favorite stores—all in
-                            just a few taps. Link your bank account or card, scan QR codes to pay instantly, and keep
-                            track of all your transactions in one clean, user-friendly interface. Whether you're
-                            shopping online, dining out, or splitting the bill with friends, SparkPay makes every
-                            payment fast, easy, and secure.
-                        </div>
-                        <div class="tech">
-                            <p>Flutter</p>
-                            <p>dart</p>
-                            <p>Firebase</p>
-                            <p>Stripe</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/afham-haleema/sparkpay" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://github.com/afham-haleema/sparkpay" target="_blank"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="w-img">
-                        <img src="./images/banking_app.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="work-container" data-aos="zoom-in">
-                    <div class="w-img">
-                        <img src="./images/ua-educator.jpg" alt="">
-                    </div>
-                    <div class="w-info">
-                        <h2>UA Educator Website</h2>
-                        <div class="w-card">
-                            A seamless educational experience designed to help users explore the importance of Universal
-                            Acceptance (UA), test internationalized email addresses and domain names, and learn how to
-                            make the internet more inclusive. Browse through informative sections that explain the
-                            fundamentals of UA, understand its impact on global accessibility, and interact with tools
-                            like chatbot assistance and real-time link validation. With a clear, accessible interface
-                            supporting multiple scripts and languages, users can easily engage with multilingual
-                            content, subscribe for updates, and discover how UA enables a truly global internet.
-                        </div>
-                        <div class="tech">
-                            <p>React</p>
-                            <p>RailwindCSS</p>
-                            <p>Firebase</p>
-                            <p>EmailJS</p>
-                            <p>API</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/afham-haleema/universal-acceptance-arabic" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://universal-acceptance-arabic.vercel.app/ " target="_blank"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work-container" data-aos="zoom-in">
-                    <div class="w-info">
-                        <h2>Ip Address Tracker</h2>
-                        <div class="w-cardr">
-                            Effortlessly track and visualize detailed information about your IP address. View your
-                            current IP, location, ISP, and connection details in real-time. Get insights into your
-                            network’s geographical data, including city, country, and time zone. Stay informed with an
-                            interactive map that pinpoints your location, helping you understand your internet
-                            footprint.
-                        </div>
-                        <div class="tech">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>JS</p>
-                            <p>API</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/afham-haleema/ipaddress_tracker" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://ipaddress-tracker-nine.vercel.app/" target="_blank"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="w-img">
-                        <img src="./images/ip.png" alt="">
-                    </div>
-                </div>
-            </section>
-            <!-- CONTACT -->
-            <section id="contact">
-                <h2 class="next" data-aos="fade-left">What's Next ?</h2>
-                <h2 class="touch" data-aos="fade-right">Get In Touch</h2>
-                <p>I’m currently open to job and internship opportunities that allow me to grow, learn, and contribute
-                    meaningfully to exciting projects. As a passionate student and full-stack developer, I’m always
-                    eager to explore new challenges and expand my skillset. Whether you have an opportunity or just want
-                    to connect — feel free to reach out! I’d love to hear from you and will get back to you as soon as I
-                    can.</p>
-                <a href="mailto:afhamhaleema@gmail.com"><button>Say Hello</button></a>
-            </section>
-
-            <div class="end">
-                <div class="socials">
-                    <a href="https://github.com/afham-haleema"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/afhamhaleema"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:afhamhaleema@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                </div>
-                <p>Designed and built by Afham Haleema</p>
-            </div>
-
-        </div>
+    <!-- Social sidebar -->
+    <div class="social-sidebar">
+        <a href="https://github.com/afham-haleema" target="_blank" class="social-link">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/afhamhaleema" target="_blank" class="social-link">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="/cdn-cgi/l/email-protection#c9a8afa1a8a4a1a8a5acaca4a889aea4a8a0a5e7aaa6a4" class="social-link">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+        <div class="social-line"></div>
     </div>
 
+    <!-- Email sidebar -->
+    <div class="email-sidebar">
+        <a href="/cdn-cgi/l/email-protection#88e9eee0e9e5e0e9e4edede5e9c8efe5e9e1e4a6ebe7e5" class="email-link"><span class="__cf_email__" data-cfemail="b3d2d5dbd2dedbd2dfd6d6ded2f3d4ded2dadf9dd0dcde">[email&#160;protected]</span></a>
+        <div class="email-line"></div>
+    </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Main content -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <p class="hero-greeting fade-in">Hi, my name is</p>
+                <h1 class="hero-title fade-in-up">Afham Haleema<span class="title-dot">.</span></h1>
+                <h2 class="hero-subtitle fade-in-up">I craft digital experiences</h2>
+                <p class="hero-description fade-in-up">
+                    Full-stack developer specializing in building exceptional websites and applications. 
+                    Currently exploring the intersection of web development, mobile apps, and cybersecurity.
+                </p>
+                <div class="hero-cta fade-in-up">
+                    <a href="#portfolio" class="cta-primary">View My Work</a>
+                    <a href="#contact" class="cta-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-background">
+                <div class="grid-pattern"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">01.</span>
+                    About Me
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-paragraph">
+                        <p>Hello! I'm Afham, a passionate developer who enjoys building digital experiences for the web. 
+                        My journey into web development began in 2023 when I created a full-stack airplane booking system 
+                        as my final school project. That experience sparked a deep interest in technology, which I continue 
+                        to pursue through my Bachelor's degree in Computer Science.</p>
+                    </div>
+
+                    <div class="about-paragraph">
+                        <p>Since then, I've worked with multiple programming languages and frameworks, participated in 
+                        various hackathons and workshops, and continuously strive to expand my skills. Currently, I'm 
+                        planning to explore networking and cybersecurity to broaden my technical foundation.</p>
+                    </div>
+
+                    <div class="about-paragraph">
+                        <p>Beyond coding, I enjoy reading and traveling—both of which inspire creativity and keep me 
+                        curious about the world.</p>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Frontend</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">Angular</span>
+                                <span class="skill-tag">Tailwind CSS</span>
+                                <span class="skill-tag">Flutter</span>
+                                <span class="skill-tag">Dart</span>
+                                <span class="skill-tag">Prime NG</span>
+                                <span class="skill-tag">AgGrid</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Backend</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Express.js</span>
+                                <span class="skill-tag">NestJS</span>
+                                <span class="skill-tag">Laravel</span>
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Databases</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Firebase</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Cloud & DevOps</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Firebase</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Testing & Tools</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Jest</span>
+                                <span class="skill-tag">Cypress</span>
+                                <span class="skill-tag">Git/GitHub</span>
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">Jira</span>
+                                <span class="skill-tag">Nx Monorepo</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Core Concepts</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">OOP</span>
+                                <span class="skill-tag">RESTful APIs</span>
+                                <span class="skill-tag">DSA</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Awards & Certifications</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">🥇 Bug-Buster Competition</span>
+                                <span class="skill-tag">🥉 AWS GenAI Hackathon</span>
+                                <span class="skill-tag">🥇 12th Grade Academic</span>
+                                <span class="skill-tag">Microsoft PL-400</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="./images/developer.png" alt="Afham Haleema">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">02.</span>
+                    Services
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Building dynamic and responsive websites using the MERN and WAMP stacks. 
+                        From concept to deployment, I create scalable solutions that deliver exceptional 
+                        user experiences with clean, maintainable code.
+                    </p>
+                    <div class="service-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-brands fa-app-store"></i>
+                    </div>
+                    <h3 class="service-title">Mobile Development</h3>
+                    <p class="service-description">
+                        Crafting cross-platform mobile applications with Flutter and Firebase. 
+                        From elegant UI design to robust backend integration and payment systems, 
+                        I build apps that users love to use.
+                    </p>
+                    <div class="service-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase</span>
+                        <span>Stripe</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">03.</span>
+                    Experience
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="experience-container">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <h3 class="experience-role">Software Engineer Trainee</h3>
+                            <p class="experience-company">@ Penny Software</p>
+                        </div>
+                        <p class="experience-duration">Aug 2025 - Present</p>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Improved system reliability by resolving critical bugs in vendor onboarding, transaction processing, tax handling, and sourcing workflows, reducing failure rates and boosting operational efficiency</li>
+                        <li>Strengthened product stability through rigorous debugging, data validation enhancements, and Git workflow optimization, accelerating release cycles and minimizing production issues</li>
+                        <li>Built and supported backend services using NestJS (TypeScript), MongoDB, and RabbitMQ, implementing complex business processes and asynchronous messaging</li>
+                        <li>Implemented full-stack features using NestJS and Angular, enabling independent delivery and reducing coordination overhead with other teams</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <h3 class="experience-role">Full-Stack Developer Intern</h3>
+                            <p class="experience-company">@ Voxa</p>
+                        </div>
+                        <p class="experience-duration">July 2025 - Aug 2025</p>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Developed authentication and onboarding workflows using Next.js and Firebase, reducing user sign-up time by 35% and improving first-week retention by 18%</li>
+                        <li>Engineered a gamified learning dashboard with level-based progression, increasing user engagement and daily active usage by 25%</li>
+                        <li>Integrated AssemblyAI and OpenAI APIs for real-time voice analysis, delivering AI feedback in under 3 seconds, enhancing learning speed for 90% of users</li>
+                        <li>Implemented Firebase Firestore and Cloud Storage for real-time data handling, enabling seamless audio uploads and tracking of user progress with 99.9% uptime</li>
+                        <li>
+                            <a href="https://www.voxa.club/" target="_blank" class="experience-link">
+                                View Project →
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section portfolio-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">04.</span>
+                    Featured Projects
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-container">
+                <!-- Project 1: Shopping App -->
+                <article class="project-card featured-left">
+                    <div class="project-image">
+                        <a href="https://github.com/afham-haleema/shoporia" target="_blank">
+                            <img src="./images/shopping_app.png" alt="Shopping App">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-label">Featured Project</p>
+                        <h3 class="project-title">
+                            <a href="https://github.com/afham-haleema/shoporia" target="_blank">Shopping App with Payment</a>
+                        </h3>
+                        <div class="project-description">
+                            Built a cross-platform shopping app using Flutter and Dart, achieving &lt;2s average page load time for smooth UI performance. 
+                            Implemented product browsing, search, cart management, and secure checkout features, reducing cart abandonment rate by 20% in testing. 
+                            Integrated Firebase Authentication and backend services, supporting email/password and Google sign-in for 100+ test users.
+                        </div>
+                        <ul class="project-tech">
+                            <li>Flutter</li>
+                            <li>Dart</li>
+                            <li>Firebase</li>
+                            <li>Stripe</li>
+                            <li>Authentication</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/afham-haleema/shoporia" target="_blank" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Myntra Clone -->
+                <article class="project-card featured-right">
+                    <div class="project-content">
+                        <p class="project-label">Featured Project</p>
+                        <h3 class="project-title">
+                            <a href="https://myntra-clone-cc8t.vercel.app" target="_blank">Myntra Clone - E-commerce Platform</a>
+                        </h3>
+                        <div class="project-description">
+                            Built a full-featured e-commerce platform using MongoDB, Express.js, React.js, Node.js with JWT authentication. 
+                            Integrated Stripe for secure online payments, achieving 100% successful test transactions. 
+                            Developed RESTful APIs with Express and Mongoose, improving query performance by 15%. 
+                            Created a responsive dashboard for users to manage orders and profiles across desktop and mobile.
+                        </div>
+                        <ul class="project-tech">
+                            <li>React</li>
+                            <li>Express.js</li>
+                            <li>MongoDB</li>
+                            <li>Stripe</li>
+                            <li>JWT</li>
+                            <li>Node.js</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/afham-haleema/MyntraClone" target="_blank" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://myntra-clone-cc8t.vercel.app" target="_blank" aria-label="External Link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <a href="https://myntra-clone-cc8t.vercel.app" target="_blank">
+                            <img src="./images/myntra.png" alt="Myntra Clone">
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3: UA Educator -->
+                <article class="project-card featured-left">
+                    <div class="project-image">
+                        <a href="https://universal-acceptance-arabic.vercel.app/" target="_blank">
+                            <img src="./images/ua-educator.jpg" alt="UA Educator Platform">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-label">Featured Project</p>
+                        <h3 class="project-title">
+                            <a href="https://universal-acceptance-arabic.vercel.app/" target="_blank">UA Educator – Arabic-Focused Web Platform</a>
+                        </h3>
+                        <div class="project-description">
+                            Developed a responsive platform to promote Universal Acceptance with full Arabic/Unicode email & domain support, improving accessibility for 100% of test cases. 
+                            Integrated EmailJS for subscription confirmations and Firebase Firestore for instant updates with sub-500ms response times. 
+                            Built an interactive chatbot and quiz system that increased user knowledge retention by 40% in pilot tests.
+                        </div>
+                        <ul class="project-tech">
+                            <li>React (Vite)</li>
+                            <li>Tailwind CSS</li>
+                            <li>Firebase</li>
+                            <li>EmailJS</li>
+                            <li>Unicode Support</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/afham-haleema/universal-acceptance-arabic" target="_blank" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://universal-acceptance-arabic.vercel.app/" target="_blank" aria-label="External Link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Other Notable Projects -->
+            <div class="other-projects">
+                <h3 class="other-projects-title">Other Notable Projects</h3>
+                <div class="other-projects-grid">
+                    
+                    <div class="other-project-card">
+                        <div class="other-project-header">
+                            <i class="fa-solid fa-folder"></i>
+                            <div class="other-project-links">
+                                <a href="https://github.com/afham-haleema/voxa" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://www.voxa.club/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="other-project-title">Voxa Voice App</h4>
+                        <p class="other-project-description">
+                            AI-powered voice learning platform with real-time feedback using AssemblyAI and OpenAI. 
+                            Features gamified learning, progress tracking, and instant voice analysis.
+                        </p>
+                        <ul class="other-project-tech">
+                            <li>Next.js</li>
+                            <li>Firebase</li>
+                            <li>AssemblyAI</li>
+                            <li>OpenAI</li>
+                        </ul>
+                    </div>
+
+                    <div class="other-project-card">
+                        <div class="other-project-header">
+                            <i class="fa-solid fa-folder"></i>
+                            <div class="other-project-links">
+                                <a href="https://github.com/afham-haleema/Notes-website" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://notes-website-qh1a.vercel.app/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="other-project-title">Notes Web Application</h4>
+                        <p class="other-project-description">
+                            Powerful notes management system with full CRUD operations. Features intuitive interface 
+                            for organizing thoughts and to-do lists with real-time updates.
+                        </p>
+                        <ul class="other-project-tech">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+
+                    <div class="other-project-card">
+                        <div class="other-project-header">
+                            <i class="fa-solid fa-folder"></i>
+                            <div class="other-project-links">
+                                <a href="https://github.com/afham-haleema/MovieOnlineBooking" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://movieonlinebooking.onrender.com/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="other-project-title">Movie Booking System</h4>
+                        <p class="other-project-description">
+                            Online movie ticket booking platform with seat selection, showtime management, 
+                            and secure payment processing.
+                        </p>
+                        <ul class="other-project-tech">
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div class="other-project-card">
+                        <div class="other-project-header">
+                            <i class="fa-solid fa-folder"></i>
+                            <div class="other-project-links">
+                                <a href="https://github.com/afham-haleema/sparkpay" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="other-project-title">SparkPay Banking App</h4>
+                        <p class="other-project-description">
+                            Digital payment platform with QR code scanning, bill payments, 
+                            and transaction history tracking.
+                        </p>
+                        <ul class="other-project-tech">
+                            <li>Flutter</li>
+                            <li>Firebase</li>
+                            <li>Stripe</li>
+                        </ul>
+                    </div>
+
+                    <div class="other-project-card">
+                        <div class="other-project-header">
+                            <i class="fa-solid fa-folder"></i>
+                            <div class="other-project-links">
+                                <a href="https://github.com/afham-haleema/ipaddress_tracker" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://ipaddress-tracker-nine.vercel.app/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="other-project-title">IP Address Tracker</h4>
+                        <p class="other-project-description">
+                            Real-time IP geolocation tool with interactive mapping, 
+                            ISP details, and network information visualization.
+                        </p>
+                        <ul class="other-project-tech">
+                            <li>JavaScript</li>
+                            <li>API</li>
+                            <li>Leaflet</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="contact-content">
+                <p class="contact-label">What's Next?</p>
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-description">
+                    I'm currently open to job and internship opportunities that allow me to grow, learn, 
+                    and contribute meaningfully to exciting projects. As a passionate student and full-stack 
+                    developer, I'm always eager to explore new challenges and expand my skillset.
+                </p>
+                <p class="contact-description">
+                    Whether you have an opportunity or just want to connect — feel free to reach out! 
+                    I'd love to hear from you and will get back to you as soon as I can.
+                </p>
+                <a href="/cdn-cgi/l/email-protection#bfded9d7ded2d7ded3dadad2deffd8d2ded6d391dcd0d2" class="contact-btn">
+                    Say Hello
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-socials">
+                    <a href="https://github.com/afham-haleema" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/afhamhaleema" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:afhamhaleema@gmail.com" aria-label="Email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="footer-text">Designed & Built by Afham Haleema</p>
+            </div>
+        </footer>
+
+    </main>
+
     <script src="./script.js"></script>
 </body>
 
