@@ -469,7 +469,7 @@ body::before {
 
 .cta-primary {
     background: var(--color-bg);
-    color: var(--color-bg);
+    color: var(--color-text);
 }
 
 .cta-secondary {
